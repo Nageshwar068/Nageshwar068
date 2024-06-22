@@ -1,1 +1,227 @@
-j
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>js learn</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <h1 c>Hello everyone 👋 </h1>
+  <button class="element btn" id="btn" onclick="document.querySelector('h1').innerText= 'well come to my websites.😆 ';">click me</button>
+  
+  
+  <h1>project 1: calculator</h1>
+  <p>This calculator is simple.<br>
+  u can use for basic calculation.</p>
+    <!--project 1 calculator-->
+    <div id="main">
+      
+      <input id="display" readonly placeholder="use for basic calculation">
+      
+      <button class="calculator-btn" onclick="onDisplay = '';
+      document.querySelector('#display').value= onDisplay;">
+        C
+      </button>
+      
+      <button class="calculator-btn" onclick="onDisplay = onDisplay+ '1';
+      document.querySelector('#display').value= onDisplay;
+      
+      ">
+        1
+      </button>
+      
+      <button class="calculator-btn" onclick="onDisplay = onDisplay+ '2';
+      document.querySelector('#display').value= onDisplay;">
+        2
+      </button>
+      
+      <button class="calculator-btn" onclick="onDisplay = onDisplay+ '3';
+      document.querySelector('#display').value= onDisplay;">
+        3
+      </button>
+
+      <button class="calculator-btn"
+      onclick="onDisplay = onDisplay+ '+';
+      document.querySelector('#display').value= onDisplay;">
+        +
+      </button> 
+      
+      <button class="calculator-btn" onclick="onDisplay = onDisplay+ '4';
+      document.querySelector('#display').value= onDisplay;">
+        4
+      </button>
+
+      <button class="calculator-btn" onclick="onDisplay = onDisplay+ '5';
+      document.querySelector('#display').value= onDisplay;">
+        5
+      </button>
+      
+      <button class="calculator-btn" onclick="onDisplay = onDisplay+ '6';
+      document.querySelector('#display').value= onDisplay;">
+        6
+      </button>
+      
+      <button class="calculator-btn" onclick="onDisplay = onDisplay+ '-';
+      document.querySelector('#display').value= onDisplay;">
+        -
+      </button>
+      
+      <button class="calculator-btn" onclick="onDisplay = onDisplay+ '7';
+      document.querySelector('#display').value= onDisplay;">
+        7
+      </button>
+      
+      <button class="calculator-btn" onclick="onDisplay = onDisplay+ '8';
+      document.querySelector('#display').value= onDisplay;">
+        8
+      </button>
+      
+      <button class="calculator-btn" onclick="onDisplay = onDisplay+ '9';
+      document.querySelector('#display').value= onDisplay;">
+        9
+      </button>
+      
+      <button class="calculator-btn" onclick="onDisplay = onDisplay+ '*';
+      document.querySelector('#display').value= onDisplay;">
+        ×
+      </button>
+      
+      <button class="calculator-btn" onclick="onDisplay = onDisplay+ '/';
+      document.querySelector('#display').value= onDisplay;">
+        ÷
+      </button>
+      
+      <button class="calculator-btn" onclick="onDisplay = onDisplay+ '0';
+      document.querySelector('#display').value= onDisplay;">
+        0
+      </button>
+      
+      <button class="calculator-btn" onclick="
+      let ans=eval(onDisplay);
+      onDisplay = ans;
+      document.querySelector('#display').value= onDisplay;">
+        <strong>=</strong>
+      </button>
+      
+      
+    </div>
+  
+  <h1>project 2:Simple Game</h1>
+  <div id="main2">
+    <h1 id="h2">Stone Paper sisure</h1>
+    <p>play game</p>
+    <button onclick="
+    let rNumber= Math.random()*3;
+    
+    document.querySelector('#uChoice').innerText='Your Choice is ✊️';
+    
+    
+    if(rNumber>0 && rNumber<=1 ){
+    
+     document.querySelector('#cChoice').innerText= 'Computer Choice is 🖐';
+     document.querySelector('#winner').innerText='️Computer will be Won 🤖';
+    
+     
+     }else if (rNumber >1 && rNumber <=2){
+     
+     document.querySelector('#cChoice').innerText= 'Computer Choice is ✊️';
+     
+     document.querySelector('#winner').innerText='️The Game is tie ❎️';
+     
+    }else{
+    
+    document.querySelector('#cChoice').innerText= 'Computer Choice is ️✌️';
+    
+    document.querySelector('#winner').innerText='️You wil be won👤';
+    
+    };
+    
+    
+    " class="game" 
+    
+    >✊️</button>
+    
+    
+    <button class="game"
+    onclick="
+    let rNumber= Math.random()*3;
+    
+    
+    document.querySelector('#uChoice').innerText='Your Choice is ️🖐';
+    
+    
+    if(rNumber>0 && rNumber<=1 ){
+    
+     document.querySelector('#cChoice').innerText= 'Computer Choice is ✌️';
+     document.querySelector('#winner').innerText='️Computer will be Won 🤖';
+    
+     
+     }else if (rNumber >1 && rNumber <=2){
+     
+     document.querySelector('#cChoice').innerText= 'Computer Choice is ️🖐';
+     document.querySelector('#winner').innerText='️The Game is tie ❎️';
+     
+    }else{
+    
+    document.querySelector('#cChoice').innerText= 'Computer Choice is ️✊️';
+    
+    document.querySelector('#winner').innerText='️You wil be won👤';
+    
+    };
+    
+    
+    " 
+    >🖐</button>
+    
+    
+    <button class="game"
+    
+     onclick="
+    let rNumber= Math.random()*3;
+    
+    
+    document.querySelector('#uChoice').innerText='Your Choice is ️✌️';
+    
+    
+    if(rNumber>0 && rNumber<=1 ){
+     
+     document.querySelector('#cChoice').innerText= 'Computer Choice is ️✊️';
+     document.querySelector('#winner').innerText='️Computer will be Won 🤖';
+    
+     
+     }else if (rNumber >1 && rNumber <=2){
+     
+     document.querySelector('#cChoice').innerText= 'Computer Choice is ️✌️';
+     document.querySelector('#winner').innerText='️The Game is tie ❎️';
+     
+    }else{
+    
+    document.querySelector('#cChoice').innerText= 'Computer Choice is ️🖐';
+    
+    document.querySelector('#winner').innerText='️You wil be won👤';
+    
+    };
+    " >✌️</button>
+    <div id="result">
+      <h1>Result</h1>
+      <ul>
+        <li>
+          <h1 id="uChoice" class="resultB"></h1>
+        </li>
+        
+        <li>
+         <h1 id="cChoice" class="resultB"></h1>
+        </li>
+        
+        <li>
+         <h1 id="winner" class="resultB win"></h1>
+          
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <script src="main.js">main.js</script>
+</body>
+</html>
+
